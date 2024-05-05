@@ -19,7 +19,14 @@ diccionario = { # ← el diccionario con palabras de muestra
     }
 }
 
+
+
 def main():
+    # dic.update({nuevaPal: usrInDefPal})
+    
+    # diccionario["PEPE"] = diccionario.pop("CULTO")
+    # diccionario["PEPE"]["Macarrones"] = diccionario["PEPE"].pop("Spagetti")
+    # diccionario["PEPE"]["Macarrones"] = "Los jueves se come rabo de toro"
     misFunciones.banner_inicio()
 
     while True:
@@ -31,9 +38,7 @@ def main():
             case 1: misFunciones.mostrar_BuscaMenu(diccionario)
             case 2: misFunciones.mostrar_AddModPal(diccionario)
             case 3: misFunciones.mostrar_DeletePal(diccionario)
-            case 4: 
-                print("has seleccionado salir")
-                break
+            case 4: print("has seleccionado salir"); break
             case _: print("Valor no valido")
         input("Pulsa Enter para continuar... ")
 
